@@ -1,0 +1,130 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Outfit', sans-serif;
+    font-family: 'PT Sans Caption', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    background-color: hsl(210, 46%, 95%);
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    justify-content: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-self: center;
+    border: 0.01px solid white;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+    width: 65%;
+    border-radius: 10px;
+}
+
+.main-img{
+    max-width: 40%;
+    height: auto;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+
+}
+.info-div{
+    padding: 30px;
+}
+.description{
+    font-size: 1.5rem;
+    color:  hsl(214, 17%, 51%);
+    font-weight: bolder;
+}
+p{
+    color:  hsl(212, 23%, 69%);
+}
+.woman-icon{
+    max-width: 50px;
+    max-height: 50px;
+    border-radius: 50%;
+}
+.bottom-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.right{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.data{
+    padding-left: 5px;
+}
+.name{
+    font-weight: bolder;
+    color: hsl(214, 17%, 51%);
+}
+
+.date{
+    color: hsl(212, 23%, 69%);
+}
+
+.share{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+.last-img-div{
+    background-color: hsl(210, 46%, 95%);
+    min-width: 40px;
+    min-height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    
+}
+.share-box{
+    display: none;
+}
+.share-box.active{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 40px;
+    background-color:  hsl(217, 19%, 35%);
+    min-width: 180px;
+    border: 1px solid hsl(217, 19%, 35%);
+    border-radius: 10px;
+    position: relative;
+    top: -40px;
+}
+.text{
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    font-weight: smaller;
+    color: hsl(210, 46%, 95%);
+    letter-spacing: 2px;
+}
+.icons{
+    cursor: pointer;
+}
+.last-img-div.active{
+    background-color: hsl(217, 19%, 35%);
+}
+@media (max-width:600px) {
+    .container{
+        flex-direction: column;
+        width: 80%;
+    }
+    .main-img{    
+        height: 200px;
+        width: 1000px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+}
